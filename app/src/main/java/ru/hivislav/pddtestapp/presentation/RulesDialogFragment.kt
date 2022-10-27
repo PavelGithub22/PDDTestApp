@@ -26,7 +26,7 @@ class RulesDialogFragment : DialogFragment() {
     private fun launchTestFragment() {
         requireActivity().supportFragmentManager
             .beginTransaction()
-            .replace(R.id.mainContainer, TestResultFragment.newInstance())
+            .replace(R.id.mainContainer, TestFragment.newInstance())
             .commit()
     }
 
