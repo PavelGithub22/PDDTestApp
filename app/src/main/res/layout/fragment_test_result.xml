@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".presentation.TestResultFragment">
+
+    <ImageView
+        android:id="@+id/resultImageViewTestResultFragment"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="48dp"
+        android:contentDescription="@string/result_content_description"
+        app:layout_constraintBottom_toTopOf="@id/allAnswersTextViewTestResultFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/ic_smile"/>
+
+    <TextView
+        android:id="@+id/allAnswersTextViewTestResultFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="@string/all_answers_text_view_test_result_fragment"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/trueAnswersTextViewTestResultFragment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/trueAnswersTextViewTestResultFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/true_answers_text_view_test_result_fragment"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@id/mistakesTextViewTestResultFragment"
+        app:layout_constraintEnd_toEndOf="@id/allAnswersTextViewTestResultFragment"
+        app:layout_constraintStart_toStartOf="@id/allAnswersTextViewTestResultFragment"
+        app:layout_constraintTop_toBottomOf="@id/allAnswersTextViewTestResultFragment"
+        />
+
+    <TextView
+        android:id="@+id/mistakesTextViewTestResultFragment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/mistakes_text_view_test_result_fragment"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@id/allAnswersTextViewTestResultFragment"
+        app:layout_constraintStart_toStartOf="@id/allAnswersTextViewTestResultFragment"
+        app:layout_constraintTop_toBottomOf="@id/trueAnswersTextViewTestResultFragment"
+        app:layout_constraintBottom_toTopOf="@id/retryButtonTestResultFragment"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/retryButtonTestResultFragment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/retry"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
