@@ -11,7 +11,7 @@
         android:id="@+id/resultImageViewTestResultFragment"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_margin="64dp"
+        android:layout_margin="48dp"
         android:contentDescription="@string/result_content_description"
         app:layout_constraintBottom_toTopOf="@id/allAnswersTextViewTestResultFragment"
         app:layout_constraintEnd_toEndOf="parent"
@@ -29,7 +29,8 @@
         app:layout_constraintBottom_toTopOf="@id/trueAnswersTextViewTestResultFragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/resultImageViewTestResultFragment"/>
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"/>
 
     <TextView
         android:id="@+id/trueAnswersTextViewTestResultFragment"

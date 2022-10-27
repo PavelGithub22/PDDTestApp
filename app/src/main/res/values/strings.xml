@@ -14,5 +14,6 @@
     <string name="true_answers_text_view_test_result_fragment">Количество правильных ответов: %s</string>
     <string name="all_answers_text_view_test_result_fragment">Всего вопросов: %s</string>
     <string name="result_content_description">Результат тестирования</string>
+    <string name="image_of_question">image_content_description_test_fragment</string>
 
 </resources>
